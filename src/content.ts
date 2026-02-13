@@ -151,7 +151,7 @@ const ogImageUrl = new URL('og.png', siteUrl).toString()
 const cvUrl = toAssetPath('cv.pdf')
 
 const profile: Content['profile'] = {
-  name: 'Al3xtremo',
+  name: 'Alejandro Nafria Medina',
   role: 'Ingeniero de Computadores',
   location: 'Madrid (España)',
   shortBio:
