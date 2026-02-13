@@ -1,6 +1,6 @@
 # al3xtremo.github.io
 
-Portfolio SPA (Vite + React + TypeScript + Tailwind) pensado para GitHub Pages en URL raiz.
+Portfolio SPA (Vite + React + TypeScript + Tailwind) pensado para GitHub Pages en subruta `/portfolio/`.
 
 ## Requisitos
 
@@ -20,11 +20,11 @@ npm run build
 npm run preview
 ```
 
-## Deploy a GitHub Pages (URL raiz)
+## Deploy a GitHub Pages (`/portfolio/`)
 
-1) Crea el repo en GitHub con este nombre exacto:
+1) Crea el repo en GitHub (ejemplo):
 
-`al3xtremo.github.io`
+`portfolio`
 
 2) Sube el codigo al branch `main`.
 
@@ -36,10 +36,10 @@ Settings -> Pages -> Source: GitHub Actions
 
 5) Verifica que publica en:
 
-https://al3xtremo.github.io/
+https://al3xtremo.github.io/portfolio/
 
 Notas:
 
-- `vite.config.ts` esta configurado con `base: '/'`.
+- `vite.config.ts` esta configurado con `base: '/portfolio/'`.
 - El workflow moderno esta en `.github/workflows/deploy.yml` (sin branch `gh-pages`).
 - Contenido editable: `src/content.ts`.

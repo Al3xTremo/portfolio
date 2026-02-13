@@ -144,7 +144,7 @@ export type Content = {
   }
 }
 
-const siteUrl = 'https://al3xtremo.github.io/'
+const siteUrl = 'https://al3xtremo.github.io/portfolio/'
 const ogImageUrl = new URL('og.png', siteUrl).toString()
 const cvUrl = new URL('cv.pdf', siteUrl).pathname
 
