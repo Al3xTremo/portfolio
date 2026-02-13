@@ -145,8 +145,10 @@ export type Content = {
 }
 
 const siteUrl = 'https://al3xtremo.github.io/portfolio/'
+const basePath = import.meta.env.BASE_URL
+const toAssetPath = (path: string) => `${basePath}${path.replace(/^\/+/, '')}`
 const ogImageUrl = new URL('og.png', siteUrl).toString()
-const cvUrl = new URL('cv.pdf', siteUrl).pathname
+const cvUrl = toAssetPath('cv.pdf')
 
 const profile: Content['profile'] = {
   name: 'Al3xtremo',
@@ -155,7 +157,7 @@ const profile: Content['profile'] = {
   shortBio:
     'Me gusta la IA, las bases de datos, las redes y los sistemas Linux. Programo en Python, C++ y Java, y disfruto llevando ideas a soluciones que se pueden desplegar y mantener.',
   avatar: {
-    src: '/cara.png',
+    src: toAssetPath('cara.png'),
     alt: 'Foto de Alejandro Nafría Medina',
   },
 }
@@ -267,11 +269,11 @@ export const content: Content = {
           publicRepo: 'https://github.com/al3xtremo',
         },
         images: [
-          '/projects/khomun-inicio.png',
-          '/projects/khomun-calendario.png',
-          '/projects/khomun-metricas.png',
-          '/projects/khomun-seleccion.png',
-          '/projects/khomun-resultados.png',
+          toAssetPath('projects/khomun-inicio.png'),
+          toAssetPath('projects/khomun-calendario.png'),
+          toAssetPath('projects/khomun-metricas.png'),
+          toAssetPath('projects/khomun-seleccion.png'),
+          toAssetPath('projects/khomun-resultados.png'),
         ],
       },
       {
