@@ -56,7 +56,9 @@ export type Content = {
       links: {
         demo?: string
         publicRepo?: string
+        publicRepoLabel?: string
         privateRepo?: string
+        privateRepoLabel?: string
         hasPrivateRepo?: boolean
       }
       images?: string[]
@@ -267,7 +269,9 @@ export const content: Content = {
         ],
         links: {
           publicRepo: 'https://github.com/DanielOrtizDelgado/Khomun-Frontend',
+          publicRepoLabel: 'Repo Frontend',
           privateRepo: 'https://github.com/DanielOrtizDelgado/Khomun-Backend',
+          privateRepoLabel: 'Repo Backend',
         },
         images: [
           toAssetPath('projects/khomun-inicio.png'),

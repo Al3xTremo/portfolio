@@ -139,7 +139,7 @@ export function ProjectsSection({ id, data, labels }: Props) {
                       : {})}
                     className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm transition hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-zinc-100 dark:hover:bg-white/10"
                   >
-                    <span>{labels.publicRepoLabel}</span>
+                    <span>{p.links.publicRepoLabel ?? labels.publicRepoLabel}</span>
                     <ExternalLink className="h-4 w-4 opacity-70" aria-hidden="true" />
                   </a>
                 ) : null}
@@ -152,14 +152,14 @@ export function ProjectsSection({ id, data, labels }: Props) {
                       : {})}
                     className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-zinc-900/90 px-4 py-2 text-sm font-semibold text-zinc-100 shadow-sm transition hover:bg-zinc-900 dark:border-white/10 dark:bg-zinc-100/90 dark:text-zinc-900 dark:hover:bg-zinc-100"
                   >
-                    <span>{labels.privateRepoLabel}</span>
+                    <span>{p.links.privateRepoLabel ?? labels.privateRepoLabel}</span>
                     <ExternalLink className="h-4 w-4 opacity-70" aria-hidden="true" />
                   </a>
                 ) : null}
 
                 {p.links.hasPrivateRepo && !p.links.privateRepo ? (
                   <span className="inline-flex items-center rounded-full border border-black/10 bg-zinc-900/90 px-4 py-2 text-sm font-semibold text-zinc-100 dark:border-white/10 dark:bg-zinc-100/90 dark:text-zinc-900">
-                    {labels.privateRepoLabel}
+                    {p.links.privateRepoLabel ?? labels.privateRepoLabel}
                   </span>
                 ) : null}
 
