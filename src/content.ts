@@ -266,7 +266,8 @@ export const content: Content = {
           'Visualizacion de metricas por jugador/equipo con calendario y graficas',
         ],
         links: {
-          publicRepo: 'https://github.com/al3xtremo',
+          publicRepo: 'https://github.com/DanielOrtizDelgado/Khomun-Frontend',
+          privateRepo: 'https://github.com/DanielOrtizDelgado/Khomun-Backend',
         },
         images: [
           toAssetPath('projects/khomun-inicio.png'),
